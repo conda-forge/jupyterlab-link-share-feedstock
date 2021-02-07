@@ -1,7 +1,7 @@
 About jupyterlab-link-share
 ===========================
 
-Home: https://github.com/jtpio/jupyterlab-link-share
+Home: https://github.com/jupyterlab-contrib/jupyterlab-link-share
 
 Package license: BSD-3-Clause
 
@@ -114,5 +114,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@fcollonval](https://github.com/fcollonval/)
 * [@jtpio](https://github.com/jtpio/)
 

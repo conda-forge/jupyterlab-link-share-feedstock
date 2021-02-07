@@ -11,7 +11,7 @@ source:
   sha256: 7615421364721ba3c83ab34cdd9e538634ca2ceeeb6dbf85e096a37dc8b60674
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - jupyter-packaging >=0.7.9
   run:
-    - jupyterlab ~=3.0
+    - jupyterlab >=3.0.0,<4
     - python >=3.6
 
 test:
@@ -33,7 +33,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/jtpio/jupyterlab-link-share
+  home: https://github.com/jupyterlab-contrib/jupyterlab-link-share
   summary: JupyterLab Extension to share the URL to a running Jupyter Server
   license: BSD-3-Clause
   license_file: LICENSE
@@ -41,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - jtpio
+    - fcollonval
