@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-link-share" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab-link-share-{{ version }}.tar.gz
-  sha256: ce24f62a46a433d96b2f9dd728359a7def4aec1fb1ec2723c37bd67b053fb71c
+  sha256: 039271123224a7f67dee50a92f02c6bad4d9b08c1888a9c8998b3f40490670a1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
