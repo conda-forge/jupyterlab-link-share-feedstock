@@ -1,11 +1,11 @@
-About jupyterlab-link-share
-===========================
+About jupyterlab-link-share-feedstock
+=====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-link-share-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyterlab-contrib/jupyterlab-link-share
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-link-share-feedstock/blob/main/LICENSE.txt)
 
 Summary: JupyterLab Extension to share the URL to a running Jupyter Server
 
