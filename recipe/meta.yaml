@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyterlab-link-share-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyterlab-link-share-{{ version }}.tar.gz
   sha256: f0de426aae08da0e18aa9ad32b40f62dcbb007c08509336ac58c994048a7a341
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - jupyter-packaging >=0.7.9,<1
   run:
     - jupyterlab >=3.0.0,<4
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -37,6 +37,7 @@ test:
     - if exist %PREFIX%\\etc\\jupyter\\jupyter_notebook_config.d\\jupyterlab_link_share.json (exit 0) else (exit 1)           # [win]
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jupyterlab-contrib/jupyterlab-link-share
